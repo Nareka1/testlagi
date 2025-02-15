@@ -2,7 +2,10 @@ import { defineConfig } from "vite";
 import legacy from "@vitejs/plugin-legacy";
 
 export default defineConfig({
-  // base: "Nareka1/test",
+    base: '/testlagi/',  // Ganti dengan nama repository kamu
+  build: {
+    outDir: 'dist'
+  }
   css: {
     preprocessorOptions: {
       scss: {
