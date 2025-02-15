@@ -1,0 +1,143 @@
+<head><script defer src="main.js"></script></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+  expected "{".
+    ╷
+  1 │ <!DOCTYPE html> 
+    │  ^
+    ╵
+    index.html 1:2  root stylesheet
+  ModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+  expected "{".
+    ╷
+  1 │ <!DOCTYPE html> 
+    │  ^
+    ╵
+    index.html 1:2  root stylesheet
+      at processResult (C:\Users\naren\OneDrive\Documents\visual\Api\vise\node_modules\webpack\lib\Norma  lModule.js:891:19)
+      at C:\Users\naren\OneDrive\Documents\visual\Api\vise\node_modules\webpack\lib\NormalModule.js:1037  :5
+      at C:\Users\naren\OneDrive\Documents\visual\Api\vise\node_modules\loader-runner\lib\LoaderRunner.j  s:400:11
+      at C:\Users\naren\OneDrive\Documents\visual\Api\vise\node_modules\loader-runner\lib\LoaderRunner.j  s:252:18
+      at context.callback (C:\Users\naren\OneDrive\Documents\visual\Api\vise\node_modules\loader-runner\  lib\LoaderRunner.js:124:13)
+      at Object.loader (C:\Users\naren\OneDrive\Documents\visual\Api\vise\node_modules\sass-loader\dist\  index.js:67:5)
+  Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+  expected "{".
+    ╷
+  1 │ __webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;
+    │                                                                             ^
+    ╵
+    data:text\javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath; 1  :77  root stylesheet
+  ModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+  expected "{".
+    ╷
+  1 │ __webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;
+    │                                                                             ^
+    ╵
+    data:text\javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath; 1  :77  root stylesheet
+      at processResult (C:\Users\naren\OneDrive\Documents\visual\Api\vise\node_modules\webpack\lib\Norma  lModule.js:891:19)
+      at C:\Users\naren\OneDrive\Documents\visual\Api\vise\node_modules\webpack\lib\NormalModule.js:1037  :5
+      at C:\Users\naren\OneDrive\Documents\visual\Api\vise\node_modules\loader-runner\lib\LoaderRunner.j  s:400:11
+      at C:\Users\naren\OneDrive\Documents\visual\Api\vise\node_modules\loader-runner\lib\LoaderRunner.j  s:252:18
+      at context.callback (C:\Users\naren\OneDrive\Documents\visual\Api\vise\node_modules\loader-runner\  lib\LoaderRunner.js:124:13)
+      at Object.loader (C:\Users\naren\OneDrive\Documents\visual\Api\vise\node_modules\sass-loader\dist\  index.js:67:5)
+      at runNextTicks (node:internal/process/task_queues:65:5)
+      at process.processImmediate (node:internal/timers:459:9)
+  
+  - NormalModule.js:891 processResult
+    [vise]/[webpack]/lib/NormalModule.js:891:19
+  
+  - NormalModule.js:1037 
+    [vise]/[webpack]/lib/NormalModule.js:1037:5
+  
+  - LoaderRunner.js:400 
+    [vise]/[loader-runner]/lib/LoaderRunner.js:400:11
+  
+  - LoaderRunner.js:252 
+    [vise]/[loader-runner]/lib/LoaderRunner.js:252:18
+  
+  - LoaderRunner.js:124 context.callback
+    [vise]/[loader-runner]/lib/LoaderRunner.js:124:13
+  
+  - index.js:67 Object.loader
+    [vise]/[sass-loader]/dist/index.js:67:5
+  
+  - Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+  
+  - expected "{".
+  
+  -   ╷
+  
+  - 1 │ __webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;
+  
+  -   │                                                                             ^
+  
+  -   ╵
+  
+  - data:text\javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath; 1    :77  root stylesheet
+  
+  - ModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+  
+  - expected "{".
+  
+  -   ╷
+  
+  - 1 │ __webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;
+  
+  -   │                                                                             ^
+  
+  -   ╵
+  
+  - data:text\javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath; 1    :77  root stylesheet
+  
+  - NormalModule.js:891 processResult
+    [vise]/[webpack]/lib/NormalModule.js:891:19
+  
+  - NormalModule.js:1037 
+    [vise]/[webpack]/lib/NormalModule.js:1037:5
+  
+  - LoaderRunner.js:400 
+    [vise]/[loader-runner]/lib/LoaderRunner.js:400:11
+  
+  - LoaderRunner.js:252 
+    [vise]/[loader-runner]/lib/LoaderRunner.js:252:18
+  
+  - LoaderRunner.js:124 context.callback
+    [vise]/[loader-runner]/lib/LoaderRunner.js:124:13
+  
+  - index.js:67 Object.loader
+    [vise]/[sass-loader]/dist/index.js:67:5
+  
+  - task_queues:65 runNextTicks
+    node:internal/process/task_queues:65:5
+  
+  - timers:459 process.processImmediate
+    node:internal/timers:459:9
+  
+  - child-compiler.js:211 
+    [vise]/[html-webpack-plugin]/lib/child-compiler.js:211:18
+  
+  - Compiler.js:629 finalCallback
+    [vise]/[webpack]/lib/Compiler.js:629:5
+  
+  - Compiler.js:664 
+    [vise]/[webpack]/lib/Compiler.js:664:11
+  
+  - Compiler.js:1350 
+    [vise]/[webpack]/lib/Compiler.js:1350:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [vise]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1346 
+    [vise]/[webpack]/lib/Compiler.js:1346:33
+  
+  - Compilation.js:2938 finalCallback
+    [vise]/[webpack]/lib/Compilation.js:2938:11
+  
+  - Compilation.js:3251 
+    [vise]/[webpack]/lib/Compilation.js:3251:11
+  
+  
+</pre>
