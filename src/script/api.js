@@ -1,5 +1,7 @@
+import { loadingIndicator, hideLoading } from "../components/loading";
 const API_URL = "https://notes-api.dicoding.dev/v2/notes";
 
+const sector = document.querySelector('.sector-section')
 const sampleList = document.getElementById("sampelList");
 const archiveList = document.getElementById("archiveList");
 console.log(archiveList);
@@ -62,13 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
         archiveButton.classList = "btn btn-warning";
         archiveButton.addEventListener("click", function () {
           archiveNote(note.id);
-          // console.log("Note to archive:", note); // Debug log
-          // if (note && note.id) {
-          //   archiveNote(note);
-          // } else {
-          //   console.error("Invalid note data:", note);
-          //   alert("Data catatan tidak valid, tidak dapat mengarsipkan");
-          // }
         });
 
         buttonParent.appendChild(archiveButton);
@@ -78,17 +73,22 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   async function fetchNote() {
+    loadingIndicator(sector);
     try {
       const response = await fetch(API_URL);
       const { data } = await response.json();
 
       noteBody(sampleList, data, false);
     } catch (error) {
+      hideLoading();
       console.error(error);
+    } finally {
+      hideLoading();
     }
   }
 
   async function fetchArchiveNotes() {
+    // loadingIndicator(sampleList);
     try {
       const response = await fetch(`${API_URL}/archived`);
       if (!response.ok) {
@@ -100,6 +100,8 @@ document.addEventListener("DOMContentLoaded", function () {
     } catch (error) {
       console.error("Error saat mengambil data arsip: ", error);
       archiveList.innerHTML = "<p>Gagal memuat data arsip</p>";
+    } finally {
+      hideLoading();
     }
   }
 
